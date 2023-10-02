@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Ejemplo</title>
+</head>
+<body>
+    <h1>Enviar y Recibir Cadenas de Texto</h1>
+    <form method="POST" action="/procesar">
+        <label for="mensaje">Ingrese un mensaje:</label>
+        <input type="text" name="mensaje" id="mensaje">
+        <input type="submit" value="Enviar">
+    </form>
+    {% if mensaje %}
+        <p>Mensaje recibido: {{ mensaje }}</p>
+    {% endif %}
+</body>
+</html>
